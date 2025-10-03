@@ -50,16 +50,5 @@ web/
     ├── fornecedores.html   # Fornecedores
     ├── movimentacoes.html  # Movimentações
     └── usuarios.html       # Usuários
-</div> ```
-<div align="center">
-
-👥 Autor
-Nome	Função
-Gabriel B. Zanon	Desenvolvedor Full-Stack (Front-end do TCC)
-
-📄 Licença
-Projeto acadêmico – uso livre para fins de estudo. Credite o autor ao reutilizar.
-
-Projeto TCC – Front-end © 2025  ·  Todos os direitos reservados
 
 
