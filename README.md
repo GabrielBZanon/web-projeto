@@ -47,17 +47,21 @@ web/
 
 ````
 
-👥 Autores
-|Nome|	Função|
-|Gabriel B. Zanon	|Desenvolvedor Full-Stack|
-|Lucas G. Giachetto	|Desenvolvedor Front-End|
-|Lucas M. Colombo	|Desenvolvedor Back-End|
-|Marcos V. Oliveira	|Engenheiro de Qualidade|
-|Kauê H. C. Fidellis	|Product Owner / Scrum Master|
-📄 Licença
+---
 
-Projeto acadêmico – uso livre para fins de estudo.
-Credite os autores ao reutilizar.
+## 👥 Autores
 
+| Nome | Função |
+| ---- | ------ |
+| **Gabriel B. Zanon** | Desenvolvedor Full-Stack |
+| **Lucas G. Giachetto** | Desenvolvedor Front-End|
+| **Lucas M. Colombo** | Desenvolvedor Back-End |
+| **Marcos V. Oliveira** | Engenheiro de Qualidade |
+| **Kauê H. C. Fidellis** | Product Owner / Scrum Master |
 
-Projeto TCC – Front-end © 2025 · Todos os direitos reservados
+---
+
+## 📄 Licença
+Projeto acadêmico – uso livre para fins de estudo. Credite os autores ao reutilizar.
+
+---
