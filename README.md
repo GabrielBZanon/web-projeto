@@ -33,13 +33,7 @@ Ele foi desenvolvido para fornecer uma interface limpa, responsiva e integrada a
 ```bash
 git clone https://github.com/GabrielBZanon/web-projeto.git
 cd web-projeto
-2. Executar o Front-end
-Abra pages/index.html diretamente no navegador
-ou utilize a extensão Live Server do VS Code para melhor experiência.
 
-🗂️ Estrutura de Pastas
-bash
-Copiar código
 web/
 ├── assets/
 │   ├── css/        # Estilos (style.css e config.css)
@@ -51,21 +45,20 @@ web/
     ├── movimentacoes.html  # Movimentações
     └── usuarios.html       # Usuários
 
----
+````
 
-## 👥 Autores
+👥 Autores
+Nome	Função
+Gabriel B. Zanon	Desenvolvedor Full-Stack
+Lucas G. Giachetto	Desenvolvedor Front-End
+Lucas M. Colombo	Desenvolvedor Back-End
+Marcos V. Oliveira	Engenheiro de Qualidade
+Kauê H. C. Fidellis	Product Owner / Scrum Master
+📄 Licença
 
-| Nome | Função |
-| ---- | ------ |
-| **Gabriel B. Zanon** | Desenvolvedor Full-Stack |
-| **Lucas G. Giachetto** | Desenvolvedor Front-End|
-| **Lucas M. Colombo** | Desenvolvedor Back-End |
-| **Marcos V. Oliveira** | Engenheiro de Qualidade |
-| **Kauê H. C. Fidellis** | Product Owner / Scrum Master |
+Projeto acadêmico – uso livre para fins de estudo.
+Credite os autores ao reutilizar.
 
----
+<div align="center">
 
-## 📄 Licença
-Projeto acadêmico – uso livre para fins de estudo. Credite os autores ao reutilizar.
-
----
+Projeto TCC – Front-end © 2025 · Todos os direitos reservados
