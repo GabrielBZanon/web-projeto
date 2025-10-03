@@ -1,5 +1,11 @@
-const API_URL = "http://localhost:3000/api";
+// Detecta se está rodando em localhost ou na nuvem
+const API_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3000/api"
+  : "https://seu-backend-na-nuvem.com/api";
 
+// ----------------------
+// Controle do Token
+// ----------------------
 export function getToken() {
   return localStorage.getItem("token");
 }
@@ -9,14 +15,20 @@ export function setToken(token) {
   else localStorage.removeItem("token");
 }
 
+// ----------------------
+// Tratamento de falhas
+// ----------------------
 function handleAuthFailure(res) {
   if (res.status === 401) {
     localStorage.removeItem("token");
-    window.location.href = "index.html";
+    window.location.href = "index.html"; // volta para login
   }
 }
 
-export async function api(path, { method="GET", body, headers={} } = {}) {
+// ----------------------
+// Função principal de requisições
+// ----------------------
+export async function api(path, { method = "GET", body, headers = {} } = {}) {
   const token = getToken();
   const opts = {
     method,
@@ -27,12 +39,20 @@ export async function api(path, { method="GET", body, headers={} } = {}) {
 
   const res = await fetch(`${API_URL}${path}`, opts);
   if (!res.ok) handleAuthFailure(res);
+
   let data = null;
-  try { data = await res.json(); } catch {}
+  try {
+    data = await res.json();
+  } catch {}
+
   if (!res.ok) throw new Error(data?.error || data?.erro || `HTTP ${res.status}`);
+
   return data;
 }
 
+// ----------------------
+// Atalhos para facilitar uso
+// ----------------------
 export const http = {
   get: (p) => api(p),
   post: (p, b) => api(p, { method: "POST", body: b }),
