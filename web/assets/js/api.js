@@ -1,7 +1,7 @@
-// Detecta se está rodando em localhost ou na nuvem
-const API_URL = window.location.hostname.includes("localhost")
-  ? "http://localhost:3000/api"
-  : "https://api-projeto-kappa.vercel.app/api";
+// ----------------------
+// URL da API (Vercel)
+// ----------------------
+const API_URL = "https://api-projeto-kappa.vercel.app/api";
 
 // ----------------------
 // Controle do Token
@@ -34,6 +34,7 @@ export async function api(path, { method = "GET", body, headers = {} } = {}) {
     method,
     headers: { "Content-Type": "application/json", ...headers }
   };
+
   if (token) opts.headers.Authorization = `Bearer ${token}`;
   if (body !== undefined) opts.body = JSON.stringify(body);
 
