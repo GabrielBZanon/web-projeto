@@ -1,7 +1,7 @@
 // Detecta se está rodando em localhost ou na nuvem
 const API_URL = window.location.hostname.includes("localhost")
   ? "http://localhost:3000/api"
-  : "https://seu-backend-na-nuvem.com/api";
+  : "https://api-projeto-kappa.vercel.app/api";
 
 // ----------------------
 // Controle do Token
