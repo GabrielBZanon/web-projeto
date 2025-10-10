@@ -1,7 +1,7 @@
 // ----------------------
-// URL da API (Vercel)
+// URL correta da API (sem /api no final)
 // ----------------------
-const API_URL = "https://api-projeto-kappa.vercel.app/api";
+const API_URL = "https://api-projeto-kappa.vercel.app";
 
 // ----------------------
 // Controle do Token
@@ -21,7 +21,7 @@ export function setToken(token) {
 function handleAuthFailure(res) {
   if (res.status === 401) {
     localStorage.removeItem("token");
-    window.location.href = "index.html"; // volta para login
+    window.location.href = "index.html";
   }
 }
 
@@ -32,7 +32,7 @@ export async function api(path, { method = "GET", body, headers = {} } = {}) {
   const token = getToken();
   const opts = {
     method,
-    headers: { "Content-Type": "application/json", ...headers }
+    headers: { "Content-Type": "application/json", ...headers },
   };
 
   if (token) opts.headers.Authorization = `Bearer ${token}`;
@@ -46,7 +46,8 @@ export async function api(path, { method = "GET", body, headers = {} } = {}) {
     data = await res.json();
   } catch {}
 
-  if (!res.ok) throw new Error(data?.error || data?.erro || `HTTP ${res.status}`);
+  if (!res.ok)
+    throw new Error(data?.error || data?.erro || `HTTP ${res.status}`);
 
   return data;
 }
