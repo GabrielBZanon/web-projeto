@@ -6,7 +6,7 @@ import { http, setToken, getToken } from "./api.js";
 export function requireAuth() {
   const token = getToken();
   if (!token) {
-    window.location.href = "index.html"; // redireciona para a tela de login
+    window.location.href = "index.html"; // redireciona para login
   }
 }
 
@@ -15,14 +15,12 @@ export function requireAuth() {
 // ----------------------
 export async function doLogin(email, senha) {
   try {
-    // Usa a função http.post do api.js, que já tem a URL base configurada
     const data = await http.post("/usuarios/login", { email, senha });
 
     if (!data?.token) {
       throw new Error(data?.erro || "Credenciais inválidas");
     }
 
-    // Armazena o token no localStorage
     setToken(data.token);
   } catch (error) {
     console.error("Erro ao fazer login:", error);
