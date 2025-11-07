@@ -19,17 +19,16 @@
         <form id="loginForm" class="grid">
           <div class="input-group">
             <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            <input type="email" id="email" placeholder="Digite seu e-mail" value="admin@email.com" required />
           </div>
           <div class="input-group">
             <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Digite sua senha" required />
+            <input type="password" id="senha" placeholder="Digite sua senha" value="senha123" required />
           </div>
           <button type="submit">Entrar</button>
           <p id="loginError" class="error"></p>
           <a href="#" class="forgot-password">Esqueceu a senha?</a>
         </form>
-        <p class="footer muted">Back-end: http://localhost:3000/api</p>
       </div>
     </div>
 
@@ -41,7 +40,7 @@
   </div>
 
   <script type="module">
-    import { doLogin } from "./assets/js/auth.js";
+    import { doLogin } from "./js/auth.js";
     const form = document.getElementById("loginForm");
     const err = document.getElementById("loginError");
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Supply — Dashboard</title>
   <style>
     /* Reset básico */
@@ -136,13 +137,14 @@
       .cols-3 {
         grid-template-columns: 1fr;
       }
-      
+
       .container {
         padding: 0 0.5rem;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Navbar no padrão das outras telas -->
   <div id="navbar">
@@ -163,13 +165,13 @@
         <h2>Produtos</h2>
         <p>Cadastro de produtos e peças de estoque. Integração de compra e fornecimento</p>
       </div>
-      
+
       <!-- Card Fornecedores -->
       <div class="card" onclick="window.location.href='fornecedores.html'">
         <h2>Fornecedores</h2>
         <p>Cadastro e gerenciamento de fornecedores de peças e produtos</p>
       </div>
-      
+
       <!-- Card Movimentações -->
       <div class="card" onclick="window.location.href='movimentacoes.html'">
         <h2>Movimentações</h2>
@@ -179,7 +181,7 @@
   </div>
 
   <script type="module">
-    import { requireAuth } from "./assets/js/auth.js";
+    import { requireAuth } from "./js/auth.js";
 
     // Função para ativar navegação
     function setActiveNav() {
@@ -193,7 +195,7 @@
       e.preventDefault();
       if (confirm('Deseja sair do sistema?')) {
         localStorage.removeItem('token');
-        window.location.href = 'login.html';
+        window.location.href = './index.html';
       }
     });
 
@@ -201,4 +203,5 @@
     setActiveNav();
   </script>
 </body>
+
 </html>
