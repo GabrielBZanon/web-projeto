@@ -5,7 +5,7 @@ Ele foi desenvolvido para fornecer uma interface limpa, responsiva e integrada a
 
 ---
 
-## ✨ Principais Funcionalidades
+## Principais Funcionalidades
 
 | Página | Descrição |
 | ------ | --------- |
@@ -17,7 +17,7 @@ Ele foi desenvolvido para fornecer uma interface limpa, responsiva e integrada a
 
 ---
 
-## 🏗️ Stack & Tecnologias
+## Stack & Tecnologias
 
 | Camada | Tecnologias |
 | ------ | ----------- |
@@ -49,7 +49,7 @@ web/
 
 ---
 
-## 👥 Autores
+## Autores
 
 | Nome | Função |
 | ---- | ------ |
