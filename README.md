@@ -65,3 +65,9 @@ web/
 Projeto acadêmico – uso livre para fins de estudo. Credite os autores ao reutilizar.
 
 ---
+
+<div align="center">
+
+**Smart Supply** © 2025 &nbsp;·&nbsp; Todos os direitos reservados
+
+</div>
