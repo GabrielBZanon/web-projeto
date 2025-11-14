@@ -27,7 +27,7 @@ Ele foi desenvolvido para fornecer uma interface limpa, responsiva e integrada a
 
 ---
 
-## ⚙️ Como Executar
+## Como Executar
 
 ### 1. Clonar o repositório
 ```bash
@@ -61,7 +61,7 @@ web/
 
 ---
 
-## 📄 Licença
+## Licença
 Projeto acadêmico – uso livre para fins de estudo. Credite os autores ao reutilizar.
 
 ---
