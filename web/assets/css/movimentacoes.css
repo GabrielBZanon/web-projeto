@@ -147,7 +147,7 @@ body {
 }
 
 .card h2 {
-  color: var(--primary-blue);
+  color: white; /* ALTERADO PARA BRANCO */
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -337,7 +337,6 @@ button.secondary:hover {
 .table tbody tr:last-child td {
   border-bottom: none;
 }
-
 
 /* ===== RODAPÉ ===== */
 .movimentacoes-footer {
